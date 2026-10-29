@@ -14,7 +14,7 @@ function App() {
  
 
   const userInfo = userInfo(name)
-  const options = Object.keys(currencyInfo)
+  const options = Object.keys(userInfo)
 
 
 
@@ -32,8 +32,7 @@ function App() {
           }}>
             <div className='w-full mb-1'>
               <InputBox
-              label="from"
-              amount={amount}
+              label="name"
               NameOptions={options}
               onUserNameChange={(name) => setName(name)}
               onEmailChange={(email) => setEmail(email)}
