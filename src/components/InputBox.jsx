@@ -5,7 +5,6 @@ function InputBox(
     name,
     userName,
     email,
-   
     selectedName= "Leanne Graham",
     nameOptions = []
 ){
@@ -21,6 +20,7 @@ function InputBox(
       
             >
             {nameOptions.map((name) => (
+                
                 <option key={name} value={name}>{name}</option>
             ))}
             </select>
